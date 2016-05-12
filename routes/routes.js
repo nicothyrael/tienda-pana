@@ -1,8 +1,8 @@
-var RecordModel = require('../models/recordmodel');
+var RecordModel = require('../models/clientmodel');
 
 var appRouter = function(app) {
 
-  app.post('/api/save', function(req, res) {
+  app.post('/api/client', function(req, res) {
     if (!req.body.firstname) {
       return res.status(400).send({
         'status': 'error',
@@ -52,7 +52,7 @@ var appRouter = function(app) {
     });
   });
 
-  app.get('/api/getAll', function(req, res) {
+  app.get('/api/client/getAll', function(req, res) {
     RecordModel.getAll(function(error, result) {
       if (error) {
         return res.status(400).send(error);

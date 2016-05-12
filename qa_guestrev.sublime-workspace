@@ -1,0 +1,572 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"repo",
+				"report_builder"
+			],
+			[
+				"SPLUNK",
+				"SPLUNK_URL"
+			],
+			[
+				"SPL",
+				"SPLUNK_P"
+			],
+			[
+				"spl",
+				"splunk_p	(env.rb)"
+			],
+			[
+				"report",
+				"reports"
+			],
+			[
+				"json",
+				"json_path"
+			],
+			[
+				"co",
+				"conn"
+			],
+			[
+				"beds_",
+				"beds_array"
+			],
+			[
+				"be",
+				"beds"
+			],
+			[
+				"in",
+				"input"
+			],
+			[
+				"lang",
+				"languages"
+			],
+			[
+				"bed",
+				"bed_groups"
+			],
+			[
+				"arg",
+				"arg2"
+			],
+			[
+				"bed_type",
+				"bed_type_configuration"
+			],
+			[
+				"Has",
+				"Hash"
+			],
+			[
+				"reque",
+				"request_opts"
+			],
+			[
+				"stat",
+				"status"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 267.0,
+		"last_filter": "json",
+		"selected_items":
+		[
+			[
+				"json",
+				"Pretty JSON: Format (Pretty Print) JSON"
+			],
+			[
+				"git: ",
+				"git: diff"
+			],
+			[
+				"gits",
+				"GitSavvy: help"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"sett",
+				"Preferences: Settings - Default"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"prety",
+				"Pretty JSON: Validate"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Channel"
+			],
+			[
+				"Package Control: r",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: List Packages"
+			]
+		],
+		"width": 422.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/nicolas.alonso/Documents/Host proxy replacement/Execution command line.txt",
+		"/C/Users/nicolas.alonso/Documents/localization-quickfix-web/nightwatch.conf.js",
+		"/C/Users/nicolas.alonso/Documents/localization-quickfix-web/features/step_definitions/steps.js",
+		"/C/Users/nicolas.alonso/Documents/localization-quickfix-web/features/google.feature"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 274.0,
+		"where_history":
+		[
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service\\features",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service\\features\\support",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service\\features",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service\\features",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service",
+			"C:\\Users\\nicolas.alonso\\Documents\\LRES Service\\features"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"@input @negative",
+			"@input @happypath",
+			"INSERT INTO camp_bt (lang_id,form_id,bed_type_enum,bed_type_name,extra_bed_bool) VALUES ",
+			"\"2 Queen Full Beds\"",
+			"\"1 Queen Twin Bed\"",
+			"\"1 Twin Twin XL Bed\"",
+			"\"1 King Twin Bed\"",
+			"\"1 Full Queen Bed\"",
+			"\"1 Twin King Bed\"",
+			"\"1 Queen Full Bed\"",
+			"{\"quantity\":\"8\",\"type\":\"TwinXLBed\",\"size\":\"Queen\"}",
+			"    | bed_size       | Queen        |\n    | bed_type       | TwinBed      |",
+			"    | bed_size       | Twin         |\n    | bed_type       | TwinXLBed    |",
+			"    | bed_size       | King         |\n    | bed_type       | TwinBed      |",
+			"    | bed_size       | Full          |\n    | bed_type       | QueenBed      |",
+			"    | bed_size       | Twin          |\n    | bed_type       | KingBed       |",
+			"    | bed_size       | Queen        |\n    | bed_type       | FullBed      |",
+			"| bed_size       | Queen        |\n| bed_type       | FullBed      |",
+			"| bed_size       | Queen        |\n    | bed_type       | FullBed      |",
+			"    | bed_size       | Queen        |\n    | bed_type       | FullBed      |",
+			"1033",
+			"English (US)",
+			"@singular",
+			"1033",
+			"English (US)",
+			"in \"http://localhost:7001/\" service\n",
+			"\n\n",
+			"\nBackground:\n  Given I send and accept JSON",
+			"  When",
+			"\nGiven I send and accept JSON",
+			"Given I send and accept JSON\nScenario: ",
+			"Scenario Outline: ",
+			"Scenario: ",
+			"Given I send and accept JSON",
+			"@plural2",
+			"singular",
+			"@plural1",
+			"@plural2",
+			"@singular",
+			"@plural1",
+			"@english ",
+			"(US) (2057)",
+			"1033",
+			"(US) (1033)",
+			"1033",
+			"(US) (1033)",
+			"  And the JSON response should '$..language'",
+			"bundle",
+			"Then the response status should be 200\n  And the JSON response should have",
+			"Then the response status should be 200\n    And the JSON response should",
+			" ]' with the text",
+			"'$..names..[? @.language",
+			"You",
+			"documents",
+			"Dutch (1043)",
+			"Korean (1042)",
+			"Japanese (1041)",
+			"Italian (1040)",
+			"Hungarian (1038)",
+			"Hebrew (1037)",
+			"French (France) (1036)",
+			" Finnish (1035)",
+			"Greek (1032)",
+			"German (1031)",
+			"Danish (1030)",
+			"Czech (1029)",
+			"Traditional TW (1028)",
+			"Arabic (1025)",
+			"@all",
+			") (1033)",
+			"| 4",
+			"plural1",
+			"| 2",
+			"singular",
+			"@english  ",
+			"@all",
+			"' ]' with the text",
+			"[? @.language = '",
+			"\"\n\n    | bed_quantity",
+			"When I send a POST request to \"",
+			"(Error HTTP 400 Bad request)",
+			"\" with the following:",
+			"I send a POST request to \"",
+			"' ]' with the text",
+			"language = '",
+			"| e_bed_type     | Bunk Bed |",
+			"| e_bed_size     | Twin     |",
+			"\"V1/",
+			"\"http://lresservice.expedia.com\"",
+			"langIDs=1033\"",
+			"input parameter",
+			"specified",
+			"@input",
+			"1025",
+			"7001",
+			"V1",
+			"1032",
+			"greek",
+			"Greek",
+			"2058",
+			"spanish",
+			"Spanish (Mexico)",
+			"1055",
+			"turkish",
+			"Turkish",
+			"1029",
+			"czech",
+			"Czech",
+			"2058",
+			"spanish",
+			"Spanish (Mexico)",
+			"1063",
+			"lithuanian",
+			"Lithuanian",
+			"1054",
+			"thai",
+			"Thai",
+			"1053",
+			"swedish",
+			"Swedish",
+			"1050",
+			"croatian",
+			"Croatian",
+			"portuguese",
+			"1046",
+			"Brazilian Portuguese",
+			"1046",
+			"1045"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"\"2 Full Beds\"",
+			"\"1 Twin Bed\"",
+			"\"1 Twin XL Bed\"",
+			"\"1 Twin Bed\"",
+			"\"1 Queen Bed\"",
+			"\"1 King Bed\"",
+			"\"1 Full Bed\"",
+			"{\"quantity\":\"8\",\"type\":\"TwinXLBed\",\"size\":\"TwinXL\"}",
+			"    | bed_size       | Twin         |\n    | bed_type       | TwinBed      |",
+			"    | bed_size       | TwinXL       |\n    | bed_type       | TwinXLBed    |",
+			"    | bed_size       | Twin         |\n    | bed_type       | TwinBed      |",
+			"    | bed_size       | Queen         |\n    | bed_type       | QueenBed      |",
+			"    | bed_size       | King          |\n    | bed_type       | KingBed       |",
+			"    | bed_size       | Full         |\n    | bed_type       | FullBed      |",
+			"| bed_size       | Full         |\n| bed_type       | FullBed      |",
+			"| bed_size       | Full         |\n    | bed_type       | FullBed      |",
+			"    | bed_size       | Full         |\n    | bed_type       | FullBed      |",
+			"1063",
+			"Lithuanian",
+			"@japanese @singular",
+			"1041",
+			"Japanese",
+			"",
+			"Given I send and accept JSON\nWhen",
+			"",
+			"Scenario: \nGiven I send and accept JSON",
+			"Scenario Outline: \nGiven I send and accept JSON\n",
+			"Given I send and accept JSON\nScenario: ",
+			"@english @plural2",
+			"plural2",
+			"@english @plural1",
+			"@english @singular",
+			"@english @plural1",
+			"",
+			"(UK)",
+			"2057",
+			"(UK)",
+			"2057",
+			"(UK)",
+			"And the JSON response should have '$..language'",
+			"Then the response status should be 200\n    And I should get valid JSON\n    And the JSON response should",
+			")]' with the text",
+			"'$..names[?(@.language",
+			"Dutch",
+			"Korean",
+			"Japanese",
+			"Italian",
+			"Hungarian",
+			"Hebrew",
+			"French (France)",
+			" Finnish",
+			"Greek",
+			"German",
+			"Danish",
+			"Czech",
+			"Traditional TW",
+			"Arabic",
+			"",
+			")",
+			"| 9",
+			"plural2",
+			"| 5",
+			"plural1",
+			"@english ",
+			"",
+			" ]' with the text",
+			"[? @.language = ",
+			"'\n\n    | bed_quantity",
+			"When I send a POST request to '",
+			"(HTTP Error Bad request)",
+			"' with the following:",
+			"I send a POST request to '",
+			" ]' with the text",
+			"language = ",
+			"| e_bed_type     | Sofa Bed |",
+			"| e_bed_size     | Twin XL  |",
+			"\"v1/",
+			"\"http://localhost:7001/\"",
+			"langIDs=1063\"",
+			"param",
+			"present",
+			"@input @negative",
+			"1033",
+			"v1",
+			"1033",
+			"english",
+			"English (US)",
+			"2057",
+			"english",
+			"English (UK)",
+			"1057",
+			"indonesian",
+			"Indonesian",
+			"1028",
+			"taiwanese",
+			"Traditional TW",
+			"2052",
+			"chinese",
+			"Simplified Chinese",
+			"1066",
+			"vietnamese",
+			"Vietnamese",
+			"1055",
+			"turkish",
+			"Turkish",
+			"1054",
+			"thai",
+			"Thai",
+			"1053",
+			"swedish",
+			"Swedish",
+			"russian",
+			"1049",
+			"Russian",
+			"Portuguese",
+			"2070",
+			"1046",
+			"portuguese",
+			"Brazilian Portuguese",
+			"1045",
+			"polish",
+			"Polish",
+			"1043",
+			"dutch",
+			"Dutch",
+			"1045",
+			"polish"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "qa_guestrev.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 158.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

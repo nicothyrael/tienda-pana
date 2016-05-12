@@ -1,0 +1,21 @@
+<form>
+  <div class="form-group">
+    <label for="firstname">Nombre</label>
+    <input type="text" class="form-control" id="firstname" placeholder="Nombre" ng-model="inputForm.firstname"></input>
+  </div>
+    <div class="form-group">
+    <label for="lastname">Apellido</label>
+    <input type="text" class="form-control" id="lastname" placeholder="Apellido" ng-model="inputForm.lastname"></input>
+  </div>
+    <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="text" class="form-control" id="email" placeholder="E-mail" ng-model="inputForm.email"></input>
+  </div>
+    <div class="form-group">
+    <label for="telephone">Telefono</label>
+    <input type="text" class="form-control" id="telephone" placeholder="Telefono" ng-model="inputForm.telephone"></input>
+  </div>
+    <button type="button" class="btn btn-danger" ui-sref="list">Cancel</button>
+    <button type="button" class="btn btn-success" ng-click="save(inputForm.firstname, inputForm.lastname, inputForm.email)">Save</button>
+  </form>
+

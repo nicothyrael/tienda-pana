@@ -1,4 +1,4 @@
-<button class="btn btn-primary" ui-sref="item">Nuevo Cliente</button>
+<button class="btn btn-primary" ui-sref="item">Lista de clientes</button>
 <br />
 <table class="table table-striped" ng-init="fetchAll()">
   <thead>
@@ -16,7 +16,7 @@
       <td>{{value.lastname}}</td>
       <td>{{value.email}}</td>
       <td>{{value.telephone}}</td>
-      <td><a href="" ui-sref="item({documentId: key})">Editar</a> | <a href=""></a></td>
+      <td><a href="" ui-sref="item({documentId: key})">Editar</a> | <a href="" ng-click="delete(key)">delete</a></td>
     </tr>
   </tbody>
 </table>
