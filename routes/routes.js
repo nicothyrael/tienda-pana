@@ -1,4 +1,4 @@
-var RecordModel = require('../models/clientmodel');
+var RecordModel = require('../models/clientmodel.js');
 
 var appRouter = function(app) {
 

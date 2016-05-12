@@ -3,21 +3,20 @@ var db = require('../app').bucket;
 var config = require('../config');
 var N1qlQuery = require('couchbase').N1qlQuery;
 
-function RecordModel() {}
+function RecordOperation() {}
 
-module.exports = RecordModel;
+module.exports = RecordOperation;
 
-RecordModel.save = function(data, callback) {
-  var clientDoc = {
-    type: "client",
-    uid: uuid.v4(),
-    firstname: data.firstname,
-    lastname: data.lastname,
-    telephone: data.telephone,
-    email: data.email
+RecordOperation.save = function(data, callback) {
+  var operationDoc = {
+    type: "operation",
+    uid: VER,
+    operationDate: data.operationDate,
+    operationNote: data.operationNote,
+    operationAmount: data.operationAmount,
   };
 
-  db.upsert("client::" + clientDoc.uid, clientDoc, function(error, result) {
+  db.upsert("operation::" + operationDoc.uid, operationDoc, function(error, result) {
     if (error) {
       callback(error, null);
       return;
@@ -29,7 +28,7 @@ RecordModel.save = function(data, callback) {
   });
 };
 
-RecordModel.getByDocumentId = function(documentId, callback) {
+RecordOperation.getByDocumentId = function(documentId, callback) {
   var statement = "select client.* " +
     "from '" + config.couchbase.bucket + "' as usernames " +
     "join '" + config.couchbase.bucket + "' as clients ok keys (\"client::\" || usernames.uid) " +
@@ -43,7 +42,7 @@ RecordModel.getByDocumentId = function(documentId, callback) {
   });
 };
 
-RecordModel.delete = function(documentId, callback) {
+RecordOperation.delete = function(documentId, callback) {
   db.remove(documentId, function(error, result) {
     if (error) {
       callback(error, null);
@@ -56,8 +55,8 @@ RecordModel.delete = function(documentId, callback) {
   });
 };
 
-RecordModel.getAll = function(callback) {
-  var statement = "select * " +
+RecordOperation.getAll = function(callback) {
+  var statement = "select client.* " +
     "from '" + config.couchbase.bucket + "' as usernames ";
   var query = N1qlQuery.fromString(statement).consistency(N1qlQuery.Consistency.REQUEST_PLUS);
   db.query(query, function(error, result) {

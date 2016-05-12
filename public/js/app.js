@@ -1,23 +1,25 @@
-angular.module('recordsapp', ['ui.router'])
+var recordsapp = angular.module('recordsapp', ['ui.router']);
+
+angular
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
-    .state('list', {
-      'url': '/clientlist',
-      'templateUrl': 'templates/clientlist.html',
-      'controller': 'MainController',
-      'cache': false
+    .state("clientlist", {
+      "url": "/clientlist",
+      "templateUrl": "templates/clientlist.html",
+      "controller": "MainController",
+      "cache": false
     })
-    .state('item', {
+    .state('client', {
       'url': '/client/:documentId',
-      'templateUrl': 'templates/client.html',
+      'templateUrl': './templates/client.html',
       'controller': 'MainController',
       'cache': false
     });
-  $urlRouterProvider.otherwise('clientlist');
+  $urlRouterProvider.otherwise("clientlist");
 })
 
-.controller('MainController', function($scope, $http, $state, $stateParams) {
+.controller("MainController", function($scope, $http, $state, $stateParams) {
 
   $scope.items = {};
 
@@ -34,7 +36,7 @@ angular.module('recordsapp', ['ui.router'])
       .error(function(error) {
         console.log(JSON.stringify(error));
       });
-  }
+  };
 
   if ($stateParams.documentId) {
     $http({
@@ -66,25 +68,26 @@ angular.module('recordsapp', ['ui.router'])
       .error(function(error) {
         console.log(JSON.stringify(error));
       });
-  }
+  };
 
   $scope.save = function(firstname, lastname, email, telephone) {
     $http({
-      method: "POST",
-      url: "/api/client",
-      data: {
-        firstname: firstname,
-        lastname: lastname,
-        email: email,
-        telephone: telephone,
-        document_id: $stateParams.documentId
-      }
-    })
-    .success(function(result) {
-      $state.go("clientlist");
-    })
-    .error(function(error) {
-      console.log(JSON.stringify(error));
-    });
-  }
+        method: "POST",
+        url: "/api/save",
+        data: {
+          firstname: firstname,
+          lastname: lastname,
+          email: email,
+          telephone: telephone,
+          document_id: $stateParams.documentId
+        }
+      })
+      .success(function(result) {
+        $state.go("list");
+      })
+      .error(function(error) {
+        console.log(JSON.stringify(error));
+      });
+  };
+
 });
