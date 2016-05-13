@@ -1,6 +1,4 @@
-var recordsapp = angular.module('recordsapp', ['ui.router']);
-
-angular
+angular.module("recordsapp", ["ui.router"])
 
 .config(function($stateProvider, $urlRouterProvider) {
   $stateProvider
@@ -12,7 +10,7 @@ angular
     })
     .state('client', {
       'url': '/client/:documentId',
-      'templateUrl': './templates/client.html',
+      'templateUrl': 'templates/client.html',
       'controller': 'MainController',
       'cache': false
     });
@@ -73,7 +71,7 @@ angular
   $scope.save = function(firstname, lastname, email, telephone) {
     $http({
         method: "POST",
-        url: "/api/save",
+        url: "/api/client",
         data: {
           firstname: firstname,
           lastname: lastname,
@@ -83,7 +81,7 @@ angular
         }
       })
       .success(function(result) {
-        $state.go("list");
+        $state.go("clientlist");
       })
       .error(function(error) {
         console.log(JSON.stringify(error));

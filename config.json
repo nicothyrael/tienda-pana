@@ -1,6 +1,6 @@
 {
   "couchbase": {
-    "server": "couchbase://172.26.125.212",
+    "server": "couchbase://127.0.0.1",
     "bucket": "tienda-pana"
   }
 }

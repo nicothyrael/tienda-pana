@@ -9,12 +9,11 @@ module.exports = RecordModel;
 
 RecordModel.save = function(data, callback) {
   var clientDoc = {
-    type: "client",
     uid: uuid.v4(),
     firstname: data.firstname,
     lastname: data.lastname,
-    telephone: data.telephone,
-    email: data.email
+    email: data.email,
+    telephone: data.telephone
   };
 
   db.upsert("client::" + clientDoc.uid, clientDoc, function(error, result) {
@@ -30,10 +29,9 @@ RecordModel.save = function(data, callback) {
 };
 
 RecordModel.getByDocumentId = function(documentId, callback) {
-  var statement = "select client.* " +
-    "from '" + config.couchbase.bucket + "' as usernames " +
-    "join '" + config.couchbase.bucket + "' as clients ok keys (\"client::\" || usernames.uid) " +
-    "where meta(usernames).id = $1";
+    var statement = "SELECT firstname, lastname, email " +
+                    "FROM `" + config.couchbase.bucket + "` AS users " +
+                    "WHERE META(users).id = $1";
   var query = N1qlQuery.fromString(statement);
   db.query(query, [documentId], function(error, result) {
     if (error) {
@@ -57,10 +55,11 @@ RecordModel.delete = function(documentId, callback) {
 };
 
 RecordModel.getAll = function(callback) {
-  var statement = "select * " +
-    "from '" + config.couchbase.bucket + "' as usernames ";
+  var statement = "SELECT META(users).id, firstname, lastname, email, telephone " +
+    "FROM `" + config.couchbase.bucket +"` AS users";
   var query = N1qlQuery.fromString(statement).consistency(N1qlQuery.Consistency.REQUEST_PLUS);
   db.query(query, function(error, result) {
+    console.log(result);
     if (error) {
       return callback(error, null);
     }
